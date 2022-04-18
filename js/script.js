@@ -8,14 +8,22 @@ $('.box-area').children().click(function () {
     event.stopPropagation();
 });
 
+/* ----------liste menüsü ile resimli menü arasında toggle işlemi yapılıyor---------- */
 
-/* const toggleView = document.querySelectorAll('.toggle-view');
- */
-/* menuToggle.onclick = function () {
-    if (menuToggle.innerHTML === `<i class="fa-solid fa-xmark"></i>`) {
-        menuToggle.innerHTML = `<i class="fa-solid fa-bars"></i>`;
-    } else {
-        menuToggle.innerHTML = `<i class="fa-solid fa-xmark"></i>`;
-       
-    }
-} */
+const toggleView = document.querySelectorAll('.toggle-view');
+const toggleViewGalery = document.querySelectorAll('.toggle-view-galery');
+
+$('.galery-view').hide();
+$('.toggle-view-galery').hide();
+$(toggleView).click(function () {
+    $('.toggle-view').hide();
+    $('.list-view').hide();
+    $('.galery-view').show();
+    $('.toggle-view-galery').css("display", "flex");
+});
+$(toggleViewGalery).click(function () {
+    $('.toggle-view').css("display", "flex");
+    $('.list-view').show();
+    $('.galery-view').hide();
+    $('.toggle-view-galery').hide();
+});

@@ -10,17 +10,41 @@ body {
     font-family: "Poppins", sans-serif;
     font-size: 1.125rem;
     position: relative;
+
+    &.active-background{
+        background-color: var(--color-gray) !important;
+    }
 }
 
 ul {
     margin-bottom: 0;
+
     li {
         list-style-type: none;
+
         a {
             color: var(--color-black) !important;
         }
     }
 }
+
+.pasive {
+    display: none !important;
+}
+
+.active {
+    display: flex !important;
+}
+
+.toggle-view-galery {
+    display: none;
+    cursor: pointer;
+}
+
+.toggle-view {
+    cursor: pointer;
+}
+
 
 a {
     text-decoration: none;
@@ -57,17 +81,21 @@ header {
 
         .navbar-brand {
             margin-right: 0;
+
             img {
                 max-width: 8rem;
+
                 @media screen and(max-width:$sm-breakpoint) {
                     max-width: 6rem;
                 }
             }
         }
-        .btn-check:focus + .btn,
+
+        .btn-check:focus+.btn,
         .btn:focus {
             box-shadow: none;
         }
+
         .dropdown-menu {
             min-width: 1rem;
             border-radius: 0.8rem;
@@ -75,6 +103,7 @@ header {
             -moz-box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.34);
             box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.34);
         }
+
         .dropdown {
             .btn {
                 font-size: 1rem;
@@ -91,67 +120,79 @@ header {
         background-color: var(--cream-color);
         height: 12rem;
         padding: 0rem 0rem 2rem 4rem;
+
         @media screen and(max-width:$sm-breakpoint) {
             height: 9rem;
             padding: 0rem 0rem 1rem 1rem;
         }
+
         h1 {
             font-weight: 400;
+
             @media screen and(max-width:$sm-breakpoint) {
                 font-size: 1.2rem;
             }
         }
     }
+
     .list-view-area {
         padding: 1rem 0;
+
         h3 {
             font-weight: 600;
             font-size: 1.1rem;
             margin-bottom: 0;
+
             @media screen and(max-width:$sm-breakpoint) {
                 font-size: 1rem;
             }
+
             i {
                 margin-left: 0.5rem;
             }
         }
     }
+
     .box-item {
         margin-bottom: 1rem;
+        cursor: pointer;
 
         .toggle-area {
             background-color: var(--color-red);
             height: 10rem;
             padding: 2rem;
+
             @media screen and(max-width:$sm-breakpoint) {
                 padding: 1rem;
             }
+
             span {
                 color: var(--color-white);
                 z-index: 99999;
             }
+
             i {
                 color: var(--color-white);
                 font-size: 2rem;
                 opacity: 0.5;
                 z-index: 99999;
+
                 &.show-box {
                     transform: rotate(180deg);
                 }
             }
 
             position: relative;
+
             &::before {
                 content: "";
                 width: 100%;
                 height: 100%;
                 background: rgb(0, 0, 0);
-                background: linear-gradient(
-                    180deg,
-                    rgba(0, 0, 0, 0.4542191876750701) 0%,
-                    rgba(0, 0, 0, 0.13209033613445376) 35%,
-                    rgba(0, 0, 0, 0.46262254901960786) 100%
-                );
+                background: linear-gradient(180deg,
+                        rgba(0, 0, 0, 0.4542191876750701) 0%,
+                        rgba(0, 0, 0, 0.13209033613445376) 35%,
+                        rgba(0, 0, 0, 0.46262254901960786) 100%);
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -159,35 +200,42 @@ header {
                 bottom: 0;
             }
         }
+
         .content {
             .list-view {
                 padding: 4rem 2rem 2rem 2rem;
+
                 @media screen and(max-width:$sm-breakpoint) {
                     padding: 2rem 1rem;
                 }
             }
-            .galery-view{
-                .card{
+
+            .galery-view {
+                .card {
                     border: 1px solid var(--color-black);
                     border-radius: 0;
                     padding: 1rem;
-                    .card-body{
-                        .price{
+
+                    .card-body {
+                        .price {
                             display: block;
                             margin-right: 2rem;
                         }
                     }
                 }
             }
+
             .card {
                 border: 0;
-                
+
                 .card-body {
                     padding: 1rem 0rem;
+
                     .card-title {
                         color: var(--color-black);
                         font-weight: 400;
                     }
+
                     .btn {
                         border: 3px solid var(--color-light-red);
                         padding: 0.3rem 0.5rem;
@@ -198,6 +246,7 @@ header {
             }
         }
     }
+
     @include shadow;
 }
 
@@ -208,6 +257,7 @@ footer {
 
     .top-footer {
         padding: 2rem 0rem 4rem 0rem;
+
         .menu {
             color: var(--color-gray);
             font-weight: 400;
@@ -218,6 +268,7 @@ footer {
 
         ul {
             padding-left: 0rem;
+
             li {
                 a {
                     color: var(--color-black);
@@ -237,9 +288,11 @@ footer {
         .address {
             max-width: 16rem;
             width: 100%;
+
             li {
                 font-weight: 400;
             }
+
             li,
             a {
                 font-size: 1rem;
@@ -250,6 +303,7 @@ footer {
     .footer-bottom {
         border-top: 1px solid var(--color-black);
         padding-top: 2rem;
+
         a {
             img {
                 max-width: 10rem;

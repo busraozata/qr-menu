@@ -92,6 +92,27 @@ ul {
     }
 }
 
+.test {
+    position: relative;
+    background-color: white;
+
+    &::after {
+        content: '';
+        position: absolute;
+        transform: skewX(-20deg);
+        transition: width 0.6s ease-in-out;
+        will-change: transform;
+        margin-left: -1rem;
+        border-right: 5rem solid var(--color-white);
+        pointer-events: none;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        right: -2rem;
+        bottom: 0;
+    }
+}
+
 .pasive {
     display: none !important;
 }
@@ -135,7 +156,8 @@ $xxl-breakpoint: 1400px; //Extra extra large
     -moz-box-shadow: 0px 9px 9px -10px rgba(0, 0, 0, 0.55);
     box-shadow: 0px 9px 9px -10px rgba(0, 0, 0, 0.55);
 }
-.btn-check:focus + .btn,
+
+.btn-check:focus+.btn,
 .btn:focus {
     box-shadow: none;
 }
@@ -157,6 +179,7 @@ $xxl-breakpoint: 1400px; //Extra extra large
     visibility: hidden;
     z-index: 1000;
 }
+
 #back-to-top::after {
     content: "\f077";
     font-family: FontAwesome;
@@ -165,6 +188,7 @@ $xxl-breakpoint: 1400px; //Extra extra large
     font-size: 1.2rem;
     color: var(--color-white);
 }
+
 #back-to-top:hover {
     cursor: pointer;
     background-color: var(--color-red);
@@ -174,6 +198,7 @@ $xxl-breakpoint: 1400px; //Extra extra large
     opacity: 1;
     visibility: visible;
 }
+
 header {
     .navbar {
         @include shadow;
@@ -187,6 +212,7 @@ header {
                 &:last-child {
                     margin-right: 0;
                 }
+
                 i {
                     color: var(--color-black);
                 }
@@ -243,6 +269,7 @@ header {
             @media screen and(max-width:$sm-breakpoint) {
                 font-size: 1.1rem;
             }
+
             @media screen and(max-width:375px) {
                 font-size: 1rem;
             }
@@ -274,9 +301,9 @@ header {
         cursor: pointer;
 
         .toggle-area {
-            background-color: var(--color-red);
+            /*  background-color: var(--color-red); */
             height: 10rem;
-            padding: 2rem;
+            /* padding: 2rem; */
             position: relative;
 
             @media screen and(max-width:$sm-breakpoint) {
@@ -288,9 +315,11 @@ header {
                 z-index: 99;
                 font-weight: 400;
                 font-size: 1.4rem;
+
                 @media screen and(max-width:$sm-breakpoint) {
                     font-size: 1.1rem;
                 }
+
                 @media screen and(max-width:375px) {
                     font-size: 1rem;
                 }
@@ -305,32 +334,31 @@ header {
                 &.show-box {
                     transform: rotate(180deg);
                 }
+
                 @media screen and(max-width:$sm-breakpoint) {
                     font-size: 1.5rem;
                 }
+
                 @media screen and(max-width:375px) {
                     font-size: 1rem;
                 }
             }
-
-           
 
             &::before {
                 content: "";
                 width: 100%;
                 height: 100%;
                 background: rgb(0, 0, 0);
-                background: linear-gradient(
-                    180deg,
-                    rgba(0, 0, 0, 0.4542191876750701) 0%,
-                    rgba(0, 0, 0, 0.13209033613445376) 35%,
-                    rgba(0, 0, 0, 0.46262254901960786) 100%
-                );
+                background: linear-gradient(180deg,
+                        rgba(0, 0, 0, 0.4542191876750701) 0%,
+                        rgba(0, 0, 0, 0.13209033613445376) 35%,
+                        rgba(0, 0, 0, 0.46262254901960786) 100%);
                 position: absolute;
                 top: 0;
                 left: 0;
                 right: 0;
                 bottom: 0;
+                z-index: 9999;
             }
         }
 
@@ -348,6 +376,7 @@ header {
                     border: 1px solid var(--color-black);
                     border-radius: 0;
                     padding: 1rem;
+
                     .card-title {
                         font-size: 1.1rem;
                     }
@@ -356,7 +385,7 @@ header {
 
             .card {
                 border: 0;
-                
+
                 .card-body {
                     padding: 1rem 0rem;
 
@@ -376,16 +405,18 @@ header {
                         margin-right: 2rem;
                         font-size: 1.2rem;
                         font-weight: 400;
+
                         @media screen and(max-width:$sm-breakpoint) {
                             font-size: 1rem;
                         }
                     }
 
-                  
+
                     .card-title {
                         color: var(--color-black);
                         font-weight: 400;
                         font-size: 1.3rem;
+
                         @media screen and(max-width:$sm-breakpoint) {
                             font-size: 1.1rem;
                         }
@@ -402,6 +433,7 @@ header {
                         color: var(--color-light-red);
                         font-weight: 400;
                         font-size: 0.8rem;
+
                         @media screen and(max-width:$sm-breakpoint) {
                             padding: 0.4rem 0.5rem;
                             font-size: 0.7rem;
@@ -417,20 +449,24 @@ header {
 
 .modal {
     z-index: 999999999;
+
     .modal-dialog {
         min-width: 100%;
         margin: inherit;
+
         .modal-content {
             margin: 1rem;
+
             .modal-body {
                 padding: 0rem;
+
                 .btn-close {
                     right: 0.2rem;
                     position: absolute;
                     font-size: 1.3rem;
                     z-index: 999999999;
                 }
-              
+
                 .img-area {
                     padding: 0rem 2.5rem;
                     position: relative;
@@ -438,6 +474,7 @@ header {
                     img {
                         border-radius: 0;
                     }
+
                     @include shadow;
                 }
 
@@ -449,6 +486,7 @@ header {
                         font-weight: 600;
                     }
                 }
+
                 .description {
                     padding: 2rem 2.5rem;
                     font-size: 1.1rem;
@@ -456,9 +494,10 @@ header {
                 }
             }
 
-            .modal-footer > * {
+            .modal-footer>* {
                 margin: 0;
             }
+
             .modal-footer {
                 padding: 0;
                 margin: 0;
@@ -488,8 +527,9 @@ footer {
             display: block;
             margin-bottom: 3rem;
             font-size: 1.2rem;
+
             @media screen and(max-width:$sm-breakpoint) {
-               font-size: 1rem;
+                font-size: 1rem;
             }
         }
 
@@ -522,9 +562,10 @@ footer {
         .copyright-text {
             font-size: 1rem;
             margin-top: 0.6rem;
+
             @media screen and(max-width:$sm-breakpoint) {
                 font-size: 0.8rem;
-             }
+            }
         }
     }
 }

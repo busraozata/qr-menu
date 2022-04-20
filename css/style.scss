@@ -1,67 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap");
-
-@font-face {
-    font-family: "Brandon Grotesque";
-    src: url("../font-family/BrandonGrotesque-MediumItalic.woff2") format("woff2"),
-        url("../font-family/BrandonGrotesque-MediumItalic.woff") format("woff");
-    font-weight: 500;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Brandon Grotesque";
-    src: url("../font-family/BrandonGrotesque-BoldItalic.woff2") format("woff2"),
-        url("../font-family/BrandonGrotesque-BoldItalic.woff") format("woff");
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Brandon Grotesque";
-    src: url("../font-family/BrandonGrotesque-ThinItalic.woff2") format("woff2"),
-        url("../font-family/BrandonGrotesque-ThinItalic.woff") format("woff");
-    font-weight: 100;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Brandon Grotesque";
-    src: url("../font-family/BrandonGrotesque-LightItalic.woff2") format("woff2"),
-        url("../font-family/BrandonGrotesque-LightItalic.woff") format("woff");
-    font-weight: 300;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Brandon Grotesque";
-    src: url("../font-family/BrandonGrotesque-Light.woff2") format("woff2"),
-        url("BrandonGrotesque-Light.woff") format("woff");
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Brandon Grotesque";
-    src: url("../font-family/BrandonGrotesque-Black.woff2") format("woff2"),
-        url("BrandonGrotesque-Black.woff") format("woff");
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Brandon Grotesque";
-    src: url("../font-family/BrandonGrotesque-RegularItalic.woff2") format("woff2"),
-        url("../font-family/BrandonGrotesque-RegularItalic.woff") format("woff");
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-}
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&family=Lobster&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&family=Lobster&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&family=Pacifico&family=Yeseva+One&display=swap");
 
 * {
     padding: 0;
@@ -71,7 +10,6 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    /* font-family: "Brandon Grotesque",sans-serif; */
     font-size: 1.125rem;
     position: relative;
 
@@ -89,27 +27,6 @@ ul {
         a {
             color: var(--color-black) !important;
         }
-    }
-}
-
-.test {
-    position: relative;
-    background-color: white;
-
-    &::after {
-        content: '';
-        position: absolute;
-        transform: skewX(-20deg);
-        transition: width 0.6s ease-in-out;
-        will-change: transform;
-        margin-left: -1rem;
-        border-right: 5rem solid var(--color-white);
-        pointer-events: none;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        right: -2rem;
-        bottom: 0;
     }
 }
 
@@ -149,6 +66,7 @@ $xxl-breakpoint: 1400px; //Extra extra large
     --cream-color: #fff8f1;
     --color-red: #a30219;
     --color-light-red: #c50606;
+    --color-orange: #ee753e;
 }
 
 @mixin shadow {
@@ -157,7 +75,7 @@ $xxl-breakpoint: 1400px; //Extra extra large
     box-shadow: 0px 9px 9px -10px rgba(0, 0, 0, 0.55);
 }
 
-.btn-check:focus+.btn,
+.btn-check:focus + .btn,
 .btn:focus {
     box-shadow: none;
 }
@@ -191,7 +109,7 @@ $xxl-breakpoint: 1400px; //Extra extra large
 
 #back-to-top:hover {
     cursor: pointer;
-    background-color: var(--color-red);
+    background-color: var(--color-orange);
 }
 
 #back-to-top.show {
@@ -215,6 +133,10 @@ header {
 
                 i {
                     color: var(--color-black);
+                    transition: 0.3s all;
+                    &:hover {
+                        color: var(--color-orange);
+                    }
                 }
             }
         }
@@ -231,18 +153,26 @@ header {
             }
         }
 
-        .dropdown-menu {
-            min-width: 1rem;
-            border-radius: 0.8rem;
-            -webkit-box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.34);
-            -moz-box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.34);
-            box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.34);
-        }
-
         .dropdown {
             .btn {
                 font-size: 1.1rem;
                 font-weight: 500;
+            }
+
+            .dropdown-menu {
+                min-width: 1rem;
+                border-radius: 0.8rem;
+                -webkit-box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.15);
+                -moz-box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.15);
+                box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.15);
+
+                .dropdown-item {
+                    &:hover,
+                    &:active {
+                        background-color: var(--cream-color);
+                        color: var(--color-black);
+                    }
+                }
             }
         }
     }
@@ -298,50 +228,14 @@ header {
 
     .box-item {
         margin-bottom: 1rem;
-        cursor: pointer;
-
         .toggle-area {
-            /*  background-color: var(--color-red); */
-            height: 10rem;
-            /* padding: 2rem; */
+            background-color: var(--color-orange);
+            height: 13rem;
             position: relative;
+            cursor: pointer;
 
             @media screen and(max-width:$sm-breakpoint) {
-                padding: 1rem;
-            }
-
-            span {
-                color: var(--color-white);
-                z-index: 99;
-                font-weight: 400;
-                font-size: 1.4rem;
-
-                @media screen and(max-width:$sm-breakpoint) {
-                    font-size: 1.1rem;
-                }
-
-                @media screen and(max-width:375px) {
-                    font-size: 1rem;
-                }
-            }
-
-            i {
-                color: var(--color-white);
-                font-size: 2.3rem;
-                opacity: 0.5;
-                z-index: 99999;
-
-                &.show-box {
-                    transform: rotate(180deg);
-                }
-
-                @media screen and(max-width:$sm-breakpoint) {
-                    font-size: 1.5rem;
-                }
-
-                @media screen and(max-width:375px) {
-                    font-size: 1rem;
-                }
+                height: 11rem;
             }
 
             &::before {
@@ -349,23 +243,98 @@ header {
                 width: 100%;
                 height: 100%;
                 background: rgb(0, 0, 0);
-                background: linear-gradient(180deg,
-                        rgba(0, 0, 0, 0.4542191876750701) 0%,
-                        rgba(0, 0, 0, 0.13209033613445376) 35%,
-                        rgba(0, 0, 0, 0.46262254901960786) 100%);
+                background: linear-gradient(
+                    180deg,
+                    rgba(0, 0, 0, 0.3214285714285714) 0%,
+                    rgba(0, 0, 0, 0.13209033613445376) 35%,
+                    rgba(0, 0, 0, 0.2994505494505495) 100%
+                );
+
                 position: absolute;
                 top: 0;
                 left: 0;
                 right: 0;
                 bottom: 0;
-                z-index: 9999;
+            }
+
+            /*    .text-area {
+                position: relative;
+                display: block;
+                border: none;
+                &::after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    width: 32px;
+                    background-color: var(--color-white);
+                    -webkit-transform: skewX(-20deg);
+                    transform: skewX(-20deg);
+                }
+                &::before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    width: 32px;
+                    background-color: var(--color-white);
+                    -webkit-transform: skewX(200deg);
+                    transform: skewX(200deg);
+                }
+            } */
+            .info-area {
+                z-index: 99;
+                padding-bottom: 1.5rem;
+                padding-right: 1rem;
+                span {
+                    color: var(--color-white);
+                    z-index: 99;
+                    font-weight: 500;
+                    letter-spacing: 0.2rem;
+                    font-size: 2rem;
+                    margin-right: 4rem;
+                    font-family: "Yeseva One", cursive;
+
+                    @media screen and(max-width:$sm-breakpoint) {
+                        font-size: 1.4rem;
+                        margin-right: 2rem;
+                    }
+
+                    @media screen and(max-width:375px) {
+                        font-size: 1rem;
+                        margin-right: 1rem;
+                    }
+                }
+
+                i {
+                    color: var(--color-white);
+                    font-size: 2.3rem;
+
+                    &.show-box {
+                        transform: rotate(180deg);
+                    }
+
+                    @media screen and(max-width:$sm-breakpoint) {
+                        font-size: 1.5rem;
+                    }
+
+                    @media screen and(max-width:375px) {
+                        font-size: 1rem;
+                    }
+                }
             }
         }
 
         .content {
             .list-view {
                 padding: 2rem;
-
+                .card-body {
+                    height: 12rem;
+                }
                 @media screen and(max-width:$sm-breakpoint) {
                     padding: 2rem 1rem;
                 }
@@ -373,7 +342,7 @@ header {
 
             .galery-view {
                 .card {
-                    border: 1px solid var(--color-black);
+                    border-bottom: 1px solid var(--color-black);
                     border-radius: 0;
                     padding: 1rem;
 
@@ -386,6 +355,10 @@ header {
             .card {
                 border: 0;
 
+                .card-img-top {
+                    height: 30rem;
+                    object-fit: cover;
+                }
                 .card-body {
                     padding: 1rem 0rem;
 
@@ -411,7 +384,6 @@ header {
                         }
                     }
 
-
                     .card-title {
                         color: var(--color-black);
                         font-weight: 400;
@@ -428,11 +400,17 @@ header {
                     }
 
                     .btn {
-                        border: 3px solid var(--color-light-red);
+                        border: 3px solid var(--color-orange);
                         padding: 0.5rem 0.7rem;
-                        color: var(--color-light-red);
-                        font-weight: 400;
+                        color: var(--color-orange);
+                        font-weight: 500;
                         font-size: 0.8rem;
+                        transition: 0.3s;
+
+                        &:hover {
+                            background-color: var(--color-orange);
+                            color: var(--color-white);
+                        }
 
                         @media screen and(max-width:$sm-breakpoint) {
                             padding: 0.4rem 0.5rem;
@@ -448,11 +426,15 @@ header {
 }
 
 .modal {
-    z-index: 999999999;
+    z-index: 9999999999999;
+    background: rgba(34, 34, 34, 0.15);
 
     .modal-dialog {
-        min-width: 100%;
-        margin: inherit;
+        min-width: 700px;
+
+        @media screen and(max-width:$sm-breakpoint) {
+            min-width: auto;
+        }
 
         .modal-content {
             margin: 1rem;
@@ -460,16 +442,74 @@ header {
             .modal-body {
                 padding: 0rem;
 
-                .btn-close {
-                    right: 0.2rem;
+                .close-modal {
+                    right: 1rem;
+                    top: 1rem;
                     position: absolute;
                     font-size: 1.3rem;
                     z-index: 999999999;
+                    background-color: rgba(0, 0, 0, 0.233);
+                    padding: 0.7rem;
+                    color: var(--color-white);
+                    cursor: pointer;
                 }
 
                 .img-area {
-                    padding: 0rem 2.5rem;
                     position: relative;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        z-index: 1;
+                        opacity: 0.97;
+                        background-color: transparent;
+                        background-image: -webkit-gradient(
+                            linear,
+                            left top,
+                            left bottom,
+                            from(rgba(0, 0, 0, 0)),
+                            to(rgba(0, 0, 0, 0.349))
+                        );
+                        background-image: -webkit-linear-gradient(
+                            linear,
+                            left top,
+                            left bottom,
+                            from(rgba(0, 0, 0, 0)),
+                            to(rgba(0, 0, 0, 0.349))
+                        );
+                        background-image: -moz-linear-gradient(
+                            linear,
+                            left top,
+                            left bottom,
+                            from(rgba(0, 0, 0, 0)),
+                            to(rgba(0, 0, 0, 0.349))
+                        );
+                        background-image: -ms-linear-gradient(
+                            linear,
+                            left top,
+                            left bottom,
+                            from(rgba(0, 0, 0, 0)),
+                            to(rgba(0, 0, 0, 0.349))
+                        );
+                        background-image: -o-linear-gradient(
+                            linear,
+                            left top,
+                            left bottom,
+                            from(rgba(0, 0, 0, 0)),
+                            to(rgba(0, 0, 0, 0.349))
+                        );
+                        background-image: linear-gradient(
+                            linear,
+                            left top,
+                            left bottom,
+                            from(rgba(0, 0, 0, 0)),
+                            to(rgba(0, 0, 0, 0.349))
+                        );
+                        filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='rgba(0, 0, 0, 0)',endColorStr='#000');
+                    }
 
                     img {
                         border-radius: 0;
@@ -489,12 +529,14 @@ header {
 
                 .description {
                     padding: 2rem 2.5rem;
-                    font-size: 1.1rem;
-                    font-weight: 300;
+                    p {
+                        font-size: 1rem;
+                        font-weight: 300;
+                    }
                 }
             }
 
-            .modal-footer>* {
+            .modal-footer > * {
                 margin: 0;
             }
 
@@ -503,9 +545,9 @@ header {
                 margin: 0;
 
                 .btn {
-                    color: var(--color-red);
+                    color: var(--color-orange);
                     font-size: 1.3rem;
-                    border: 3px solid var(--color-light-red);
+                    border: 3px solid var(--color-orange);
                     border-radius: 0;
                 }
             }
@@ -534,7 +576,6 @@ footer {
         }
 
         .address {
-            max-width: 16rem;
             width: 100%;
             padding-left: 0rem;
 

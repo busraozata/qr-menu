@@ -114,6 +114,10 @@ a {
   visibility: visible;
 }
 
+header .container-fluid {
+  padding: 0;
+}
+
 header .navbar {
   -webkit-box-shadow: 0px 9px 9px -10px rgba(0, 0, 0, 0.55);
   box-shadow: 0px 9px 9px -10px rgba(0, 0, 0, 0.55);
@@ -170,10 +174,187 @@ header .navbar .dropdown .dropdown-menu .dropdown-item:hover, header .navbar .dr
   color: var(--color-black);
 }
 
+.boxes {
+  padding: 2rem 0rem;
+}
+
+.boxes .card {
+  border: none;
+  -webkit-box-shadow: 10px 10px 43px -19px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 43px -19px rgba(0, 0, 0, 0.75);
+}
+
+.boxes .card img {
+  height: 30rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 1200px) {
+  .boxes .card img {
+    height: 20rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .boxes .card img {
+    height: 10rem;
+  }
+}
+
+.boxes .card .card-body {
+  border: none;
+  height: 5rem;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 375PX) {
+  .boxes .card .card-body {
+    height: 4rem;
+  }
+}
+
+.boxes .card .card-body h5 {
+  padding: 1rem 0rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: var(--color-red);
+}
+
+@media screen and (max-width: 600px) {
+  .boxes .card .card-body h5 {
+    font-size: 1rem;
+    padding: 0rem;
+  }
+}
+
+@media screen and (max-width: 375PX) {
+  .boxes .card .card-body h5 {
+    font-size: 0.9rem;
+  }
+}
+
+.category-menu .category-title-area {
+  background-color: var(--cream-color);
+  padding: 1.5rem 1rem;
+  -webkit-box-shadow: 0px 9px 9px -10px rgba(0, 0, 0, 0.55);
+  box-shadow: 0px 9px 9px -10px rgba(0, 0, 0, 0.55);
+  margin: 0rem 0rem 2rem 0rem;
+}
+
+.category-menu .category-title-area h2 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 0rem;
+}
+
+@media screen and (max-width: 600px) {
+  .category-menu .category-title-area h2 {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .category-menu .category-title-area h2 {
+    font-size: 1rem;
+  }
+}
+
+.category-menu .category-list {
+  padding: 1rem 1rem 0rem 1rem;
+}
+
+.category-menu .category-list .item {
+  border: 1px solid #8485855b;
+  -webkit-box-shadow: 0px 9px 9px -10px rgba(0, 0, 0, 0.55);
+  box-shadow: 0px 9px 9px -10px rgba(0, 0, 0, 0.55);
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.category-menu .category-list .item .img-wrapper {
+  width: 100%;
+}
+
+.category-menu .category-list .item .img-wrapper img {
+  width: 100%;
+  height: 30rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 1200px) {
+  .category-menu .category-list .item .img-wrapper img {
+    height: 20rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .category-menu .category-list .item .img-wrapper img {
+    height: 10rem;
+  }
+}
+
+.category-menu .category-list .item .detail {
+  padding: 1rem;
+}
+
+.category-menu .category-list .item .detail h5 {
+  color: var(--color-red);
+  font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+  .category-menu .category-list .item .detail h5 {
+    font-size: 1rem;
+  }
+}
+
+.category-menu .category-list .item .detail .price {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: var(--color-black);
+}
+
 .menus {
   overflow: hidden;
   -webkit-box-shadow: 0px 9px 9px -10px rgba(0, 0, 0, 0.55);
   box-shadow: 0px 9px 9px -10px rgba(0, 0, 0, 0.55);
+}
+
+.menus .container-fluid {
+  padding: 0;
+}
+
+.menus .slider-area .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.menus .slider-area .swiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.menus .slider-area .swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 15rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .menus .menu-title-area {
@@ -376,6 +557,12 @@ header .navbar .dropdown .dropdown-menu .dropdown-item:hover, header .navbar .dr
   height: 30rem;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media screen and (max-width: 600px) {
+  .menus .box-item .content .card .card-img-top {
+    height: 10rem;
+  }
 }
 
 .menus .box-item .content .card .card-body {

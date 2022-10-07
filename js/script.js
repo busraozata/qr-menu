@@ -1,3 +1,6 @@
+var swiper = new Swiper(".mySwiper", {});
+
+
 $('.box-item .content').hide(); //Hide children by default
 
 $('.box-area').children().click(function () {
@@ -43,4 +46,6 @@ btn.on('click', function(e) {
   e.preventDefault();
   $('html, body').animate({scrollTop:0}, '300');
 });
+
+
 

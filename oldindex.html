@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>SEASHA</title>
+</head>
+
+<body>
+    <a id="back-to-top"></a>
+    <header class="header d-flex justify-content-center align-items-center">
+        <div class="container-fluid">
+            <nav class="navbar">
+                <div class="social-media d-flex align-items-center justify-content-center">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <a class="navbar-brand" href="#">
+                    <img src="./img/logo.svg" alt="header logo">
+                </a>
+                <div class="dropdown">
+                    <button class="btn" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                        TR <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <li><button class="dropdown-item" type="button">TR</button></li>
+                        <li><button class="dropdown-item" type="button">DE</button></li>
+                        <li><button class="dropdown-item" type="button">EN</button></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="menus">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="menu-title-area d-flex justify-content-start align-items-end">
+                        <h1>
+                            <strong>SEASHA</strong> 2021 - 22 YAZ MENÜSÜ
+                        </h1>
+                    </div>
+                    <div class="list-view-area d-flex justify-content-end align-items-end">
+                        <h3 class=" align-items-center toggle-view">
+                            LİSTE GÖRÜNÜMÜ<i class="ri-menu-3-fill"></i>
+                        </h3>
+                        <h3 class="align-items-center toggle-view-galery">
+                            GALERİ GÖRÜNÜMÜ <i class="ri-dashboard-line"></i>
+                        </h3>
+                    </div>
+                    <div class="box-area">
+
+                        <div class="box-item">
+                            <div class="toggle-area d-flex  w-100">
+                                <div class="d-flex justify-content-end align-items-end  w-100" style="background-image: url(./img/ERG10078.jpg); background-repeat: no-repeat; background-position: center; background-size: cover; height: 100%;">
+                                    <div class="info-area d-flex justify-content-center align-items-center">
+                                        <span>KAHVALTI...</span>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="list-view">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6 col-lg-4 py-3 col-6">
+                                            <div class="card">
+                                                <img class="card-img-top img-fluid" src="./img/ERG10078.jpg" alt="Card image cap">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Ballı Dil Peynirli French Tost</h5>
+                                                    <p class="card-text">...</p>
+                                                    <p class="price">50.00 TL</p>
+                                                    <button class="btn detail" data-bs-toggle="modal" data-bs-target="#exampleModal">İNCELE</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-lg-4 py-3 col-6">
+                                            <div class="card">
+                                                <img class="card-img-top" src="./img/ERG10181.jpg" alt="Card image cap">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Sahanda Yumurta</h5>
+                                                    <p class="card-text">...</p>
+                                                    <p class="price">50.00 TL</p>
+                                                    <button class="btn detail" data-bs-toggle="modal" data-bs-target="#exampleModal">İNCELE</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-lg-4 py-3 col-6">
+                                            <div class="card">
+                                                <img class="card-img-top" src="./img/sahanda-yumurta.png" alt="Card image cap">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Karışık Sahanda Yumurta</h5>
+                                                    <p class="card-text">...</p>
+                                                    <p class="price">50.00 TL</p>
+                                                    <button class="btn detail" data-bs-toggle="modal" data-bs-target="#exampleModal">İNCELE</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-lg-4 py-3 col-6">
+                                            <div class="card">
+                                                <img class="card-img-top" src="./img/ERG10181.jpg" alt="Card image cap">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Sahanda Yumurta</h5>
+                                                    <p class="card-text">...</p>
+                                                    <p class="price">50.00 TL</p>
+                                                    <button class="btn detail" data-bs-toggle="modal" data-bs-target="#exampleModal">İNCELE</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="galery-view">
+                                    <div class="galery-item">
+                                        <div class="card ">
+                                            <div class="card-body d-flex justify-content-between">
+                                                <div>
+                                                    <h5 class="card-title">Ballı Dil Peynirli French Tost
+                                                    </h5>
+                                                    <p class="card-text">...</p>
+                                                </div>
+                                                <div class="price-and-detail d-flex align-items-start justify-content-start">
+                                                    <p class="price mr-5">50.00 TL</p>
+                                                    <button class="btn btn-sm detail" data-bs-toggle="modal" data-bs-target="#exampleModal">İNCELE</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="galery-item">
+                                        <div class="card ">
+                                            <div class="card-body d-flex justify-content-between">
+                                                <div>
+                                                    <h5 class="card-title">Menemen Kaşarlı </h5>
+                                                    <p class="card-text">...</p>
+                                                </div>
+                                                <div class="price-and-detail d-flex align-items-start justify-content-start">
+                                                    <p class="price mr-5">50.00 TL</p>
+                                                    <button class="btn btn-sm detail" data-bs-toggle="modal" data-bs-target="#exampleModal">İNCELE</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="galery-item">
+                                        <div class="card ">
+                                            <div class="card-body d-flex justify-content-between">
+                                                <div>
+                                                    <h5 class="card-title">Falafel Bowl</h5>
+                                                    <p class="card-text">...</p>
+                                                </div>
+                                                <div class="price-and-detail d-flex align-items-start justify-content-start">
+                                                    <p class="price mr-5">50.00 TL</p>
+                                                    <button class="btn btn-sm detail" data-bs-toggle="modal" data-bs-target="#exampleModal">İNCELE</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="galery-item">
+                                        <div class="card ">
+                                            <div class="card-body d-flex justify-content-between">
+                                                <div>
+                                                    <h5 class="card-title">Tabule Salata</h5>
+                                                    <p class="card-text">...</p>
+                                                </div>
+                                                <div class="price-and-detail d-flex align-items-start justify-content-start">
+                                                    <p class="price mr-5">50.00 TL</p>
+                                                    <button class="btn btn-sm detail" data-bs-toggle="modal" data-bs-target="#exampleModal">İNCELE</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="galery-item">
+                                        <div class="card ">
+                                            <div class="card-body d-flex justify-content-between">
+                                                <div>
+                                                    <h5 class="card-title">Penne Alla Normo</h5>
+                                                    <p class="card-text">...</p>
+                                                </div>
+                                                <div class="price-and-detail d-flex align-items-start justify-content-start">
+                                                    <p class="price mr-5">50.00 TL</p>
+                                                    <button class="btn btn-sm detail" data-bs-toggle="modal" data-bs-target="#exampleModal">İNCELE</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="galery-item">
+                                        <div class="card ">
+                                            <div class="card-body d-flex justify-content-between">
+                                                <div>
+                                                    <h5 class="card-title">Humuslu Köfte</h5>
+                                                    <p class="card-text">...</p>
+                                                </div>
+                                                <div class="price-and-detail d-flex align-items-start justify-content-start">
+                                                    <p class="price mr-5">50.00 TL</p>
+                                                    <button class="btn btn-sm detail" data-bs-toggle="modal" data-bs-target="#exampleModal">İNCELE</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box-item">
+                            <div class="toggle-area d-flex  w-100">
+                                <div class="d-flex justify-content-end align-items-end  w-100" style="background-image: url(./img/ERG11426.jpg); background-repeat: no-repeat; background-position: center; background-size: cover; height: 100%;">
+                                    <div class="info-area d-flex justify-content-center align-items-center">
+                                        <span>PİZZA...</span>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="list-view">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6 col-lg-4 py-3 col-6">
+                                            <div class="card">
+                                                <img class="card-img-top img-fluid" src="./img/ERG11432.jpg" alt="Card image cap">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Ballı Dil Peynirli French Tost</h5>
+                                                    <p class="card-text">...</p>
+                                                    <p class="price">50.00 TL</p>
+                                                    <button class="btn detail" data-bs-toggle="modal" data-bs-target="#exampleModal">İNCELE</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-lg-4 py-3 col-6">
+                                            <div class="card">
+                                                <img class="card-img-top" src="./img/ERG11433.jpg" alt="Card image cap">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Sahanda Yumurta</h5>
+                                                    <p class="card-text">...</p>
+                                                    <p class="price">50.00 TL</p>
+                                                    <button class="btn detail" data-bs-toggle="modal" data-bs-target="#exampleModal">İNCELE</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-lg-4 py-3 col-6">
+                                            <div class="card">
+                                                <img class="card-img-top img-fluid" src="./img/ERG11432.jpg" alt="Card image cap">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Ballı Dil Peynirli French Tost</h5>
+                                                    <p class="card-text">...</p>
+                                                    <p class="price">50.00 TL</p>
+                                                    <button class="btn detail" data-bs-toggle="modal" data-bs-target="#exampleModal">İNCELE</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-lg-4 py-3 col-6">
+                                            <div class="card">
+                                                <img class="card-img-top" src="./img/ERG11433.jpg" alt="Card image cap">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Sahanda Yumurta</h5>
+                                                    <p class="card-text">...</p>
+                                                    <p class="price">50.00 TL</p>
+                                                    <button class="btn detail" data-bs-toggle="modal" data-bs-target="#exampleModal">İNCELE</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="galery-view">
+                                    <div class="galery-item">
+                                        <div class="card ">
+                                            <div class="card-body d-flex justify-content-between">
+                                                <div>
+                                                    <h5 class="card-title">Ballı Dil Peynirli French Tost
+                                                    </h5>
+                                                    <p class="card-text">...</p>
+                                                </div>
+                                                <div class="price-and-detail d-flex align-items-start justify-content-start">
+                                                    <p class="price mr-5">50.00 TL</p>
+                                                    <button class="btn btn-sm detail" data-bs-toggle="modal" data-bs-target="#exampleModal">İNCELE</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="galery-item">
+                                        <div class="card ">
+                                            <div class="card-body d-flex justify-content-between">
+                                                <div>
+                                                    <h5 class="card-title">Menemen Kaşarlı </h5>
+                                                    <p class="card-text">...</p>
+                                                </div>
+                                                <div class="price-and-detail d-flex align-items-start justify-content-start">
+                                                    <p class="price mr-5">50.00 TL</p>
+                                                    <button class="btn btn-sm detail" data-bs-toggle="modal" data-bs-target="#exampleModal">İNCELE</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="galery-item">
+                                        <div class="card ">
+                                            <div class="card-body d-flex justify-content-between">
+                                                <div>
+                                                    <h5 class="card-title">Falafel Bowl</h5>
+                                                    <p class="card-text">...</p>
+                                                </div>
+                                                <div class="price-and-detail d-flex align-items-start justify-content-start">
+                                                    <p class="price mr-5">50.00 TL</p>
+                                                    <button class="btn btn-sm detail" data-bs-toggle="modal" data-bs-target="#exampleModal">İNCELE</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="galery-item">
+                                        <div class="card ">
+                                            <div class="card-body d-flex justify-content-between">
+                                                <div>
+                                                    <h5 class="card-title">Tabule Salata</h5>
+                                                    <p class="card-text">...</p>
+                                                </div>
+                                                <div class="price-and-detail d-flex align-items-start justify-content-start">
+                                                    <p class="price mr-5">50.00 TL</p>
+                                                    <button class="btn btn-sm detail" data-bs-toggle="modal" data-bs-target="#exampleModal">İNCELE</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="galery-item">
+                                        <div class="card ">
+                                            <div class="card-body d-flex justify-content-between">
+                                                <div>
+                                                    <h5 class="card-title">Penne Alla Normo</h5>
+                                                    <p class="card-text">...</p>
+                                                </div>
+                                                <div class="price-and-detail d-flex align-items-start justify-content-start">
+                                                    <p class="price mr-5">50.00 TL</p>
+                                                    <button class="btn btn-sm detail" data-bs-toggle="modal" data-bs-target="#exampleModal">İNCELE</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="galery-item">
+                                        <div class="card ">
+                                            <div class="card-body d-flex justify-content-between">
+                                                <div>
+                                                    <h5 class="card-title">Humuslu Köfte</h5>
+                                                    <p class="card-text">...</p>
+                                                </div>
+                                                <div class="price-and-detail d-flex align-items-start justify-content-start">
+                                                    <p class="price mr-5">50.00 TL</p>
+                                                    <button class="btn btn-sm detail" data-bs-toggle="modal" data-bs-target="#exampleModal">İNCELE</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box-item">
+                            <div class="toggle-area d-flex  w-100">
+                                <div class="d-flex justify-content-end align-items-end  w-100" style="background-image: url(./img/ERG12413.jpg); background-repeat: no-repeat; background-position: center; background-size: cover; height: 100%;">
+                                    <div class="info-area d-flex justify-content-center align-items-center">
+                                        <span>İÇECEKLER...</span>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="list-view">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6 col-lg-4 py-3 col-6">
+                                            <div class="card">
+                                                <img class="card-img-top img-fluid" src="./img/ERG12346.jpg" alt="Card image cap">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Ballı Dil Peynirli French Tost</h5>
+                                                    <p class="card-text">...</p>
+                                                    <p class="price">50.00 TL</p>
+                                                    <button class="btn detail" data-bs-toggle="modal" data-bs-target="#exampleModal">İNCELE</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-lg-4 py-3 col-6">
+                                            <div class="card">
+                                                <img class="card-img-top" src="./img/ERG12313.jpg" alt="Card image cap">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Sahanda Yumurta</h5>
+                                                    <p class="card-text">...</p>
+                                                    <p class="price">50.00 TL</p>
+                                                    <button class="btn detail" data-bs-toggle="modal" data-bs-target="#exampleModal">İNCELE</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-lg-4 py-3 col-6">
+                                            <div class="card">
+                                                <img class="card-img-top img-fluid" src="./img/ERG12346.jpg" alt="Card image cap">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Ballı Dil Peynirli French Tost</h5>
+                                                    <p class="card-text">...</p>
+                                                    <p class="price">50.00 TL</p>
+                                                    <button class="btn detail" data-bs-toggle="modal" data-bs-target="#exampleModal">İNCELE</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-lg-4 py-3 col-6">
+                                            <div class="card">
+                                                <img class="card-img-top" src="./img/ERG12313.jpg" alt="Card image cap">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Sahanda Yumurta</h5>
+                                                    <p class="card-text">...</p>
+                                                    <p class="price">50.00 TL</p>
+                                                    <button class="btn detail" data-bs-toggle="modal" data-bs-target="#exampleModal">İNCELE</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="galery-view">
+                                    <div class="galery-item">
+                                        <div class="card ">
+                                            <div class="card-body d-flex justify-content-between">
+                                                <div>
+                                                    <h5 class="card-title">Ballı Dil Peynirli French Tost
+                                                    </h5>
+                                                    <p class="card-text">...</p>
+                                                </div>
+                                                <div class="price-and-detail d-flex align-items-start justify-content-start">
+                                                    <p class="price mr-5">50.00 TL</p>
+                                                    <button class="btn btn-sm detail" data-bs-toggle="modal" data-bs-target="#exampleModal">İNCELE</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="galery-item">
+                                        <div class="card ">
+                                            <div class="card-body d-flex justify-content-between">
+                                                <div>
+                                                    <h5 class="card-title">Menemen Kaşarlı </h5>
+                                                    <p class="card-text">...</p>
+                                                </div>
+                                                <div class="price-and-detail d-flex align-items-start justify-content-start">
+                                                    <p class="price mr-5">50.00 TL</p>
+                                                    <button class="btn btn-sm detail" data-bs-toggle="modal" data-bs-target="#exampleModal">İNCELE</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="galery-item">
+                                        <div class="card ">
+                                            <div class="card-body d-flex justify-content-between">
+                                                <div>
+                                                    <h5 class="card-title">Falafel Bowl</h5>
+                                                    <p class="card-text">...</p>
+                                                </div>
+                                                <div class="price-and-detail d-flex align-items-start justify-content-start">
+                                                    <p class="price mr-5">50.00 TL</p>
+                                                    <button class="btn btn-sm detail" data-bs-toggle="modal" data-bs-target="#exampleModal">İNCELE</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="galery-item">
+                                        <div class="card ">
+                                            <div class="card-body d-flex justify-content-between">
+                                                <div>
+                                                    <h5 class="card-title">Tabule Salata</h5>
+                                                    <p class="card-text">...</p>
+                                                </div>
+                                                <div class="price-and-detail d-flex align-items-start justify-content-start">
+                                                    <p class="price mr-5">50.00 TL</p>
+                                                    <button class="btn btn-sm detail" data-bs-toggle="modal" data-bs-target="#exampleModal">İNCELE</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="galery-item">
+                                        <div class="card ">
+                                            <div class="card-body d-flex justify-content-between">
+                                                <div>
+                                                    <h5 class="card-title">Penne Alla Normo</h5>
+                                                    <p class="card-text">...</p>
+                                                </div>
+                                                <div class="price-and-detail d-flex align-items-start justify-content-start">
+                                                    <p class="price mr-5">50.00 TL</p>
+                                                    <button class="btn btn-sm detail" data-bs-toggle="modal" data-bs-target="#exampleModal">İNCELE</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="galery-item">
+                                        <div class="card ">
+                                            <div class="card-body d-flex justify-content-between">
+                                                <div>
+                                                    <h5 class="card-title">Humuslu Köfte</h5>
+                                                    <p class="card-text">...</p>
+                                                </div>
+                                                <div class="price-and-detail d-flex align-items-start justify-content-start">
+                                                    <p class="price mr-5">50.00 TL</p>
+                                                    <button class="btn btn-sm detail" data-bs-toggle="modal" data-bs-target="#exampleModal">İNCELE</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box-item">
+                            <div class="toggle-area d-flex  w-100">
+                                <div class="d-flex justify-content-end align-items-end  w-100" style="background-image: url(./img/ERG12052.jpg); background-repeat: no-repeat; background-position: center; background-size: cover; height: 100%;">
+                                    <div class="info-area d-flex justify-content-center align-items-center">
+                                        <span>TATLILAR...</span>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="list-view">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6 col-lg-4 py-3 col-6">
+                                            <div class="card">
+                                                <img class="card-img-top img-fluid" src="./img/ERG12079.jpg" alt="Card image cap">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Ballı Dil Peynirli French Tost</h5>
+                                                    <p class="card-text">...</p>
+                                                    <p class="price">50.00 TL</p>
+                                                    <button class="btn detail" data-bs-toggle="modal" data-bs-target="#exampleModal">İNCELE</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-lg-4 py-3 col-6">
+                                            <div class="card">
+                                                <img class="card-img-top" src="./img/ERG12023.jpg" alt="Card image cap">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Sahanda Yumurta</h5>
+                                                    <p class="card-text">...</p>
+                                                    <p class="price">50.00 TL</p>
+                                                    <button class="btn detail" data-bs-toggle="modal" data-bs-target="#exampleModal">İNCELE</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-lg-4 py-3 col-6">
+                                            <div class="card">
+                                                <img class="card-img-top img-fluid" src="./img/ERG12079.jpg" alt="Card image cap">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Ballı Dil Peynirli French Tost</h5>
+                                                    <p class="card-text">...</p>
+                                                    <p class="price">50.00 TL</p>
+                                                    <button class="btn detail" data-bs-toggle="modal" data-bs-target="#exampleModal">İNCELE</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-lg-4 py-3 col-6">
+                                            <div class="card">
+                                                <img class="card-img-top" src="./img/ERG12023.jpg" alt="Card image cap">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Sahanda Yumurta</h5>
+                                                    <p class="card-text">...</p>
+                                                    <p class="price">50.00 TL</p>
+                                                    <button class="btn detail" data-bs-toggle="modal" data-bs-target="#exampleModal">İNCELE</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="galery-view">
+                                    <div class="galery-item">
+                                        <div class="card ">
+                                            <div class="card-body d-flex justify-content-between">
+                                                <div>
+                                                    <h5 class="card-title">Ballı Dil Peynirli French Tost
+                                                    </h5>
+                                                    <p class="card-text">...</p>
+                                                </div>
+                                                <div class="price-and-detail d-flex align-items-start justify-content-start">
+                                                    <p class="price mr-5">50.00 TL</p>
+                                                    <button class="btn btn-sm detail" data-bs-toggle="modal" data-bs-target="#exampleModal">İNCELE</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="galery-item">
+                                        <div class="card ">
+                                            <div class="card-body d-flex justify-content-between">
+                                                <div>
+                                                    <h5 class="card-title">Menemen Kaşarlı </h5>
+                                                    <p class="card-text">...</p>
+                                                </div>
+                                                <div class="price-and-detail d-flex align-items-start justify-content-start">
+                                                    <p class="price mr-5">50.00 TL</p>
+                                                    <button class="btn btn-sm detail" data-bs-toggle="modal" data-bs-target="#exampleModal">İNCELE</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="galery-item">
+                                        <div class="card ">
+                                            <div class="card-body d-flex justify-content-between">
+                                                <div>
+                                                    <h5 class="card-title">Falafel Bowl</h5>
+                                                    <p class="card-text">...</p>
+                                                </div>
+                                                <div class="price-and-detail d-flex align-items-start justify-content-start">
+                                                    <p class="price mr-5">50.00 TL</p>
+                                                    <button class="btn btn-sm detail" data-bs-toggle="modal" data-bs-target="#exampleModal">İNCELE</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="galery-item">
+                                        <div class="card ">
+                                            <div class="card-body d-flex justify-content-between">
+                                                <div>
+                                                    <h5 class="card-title">Tabule Salata</h5>
+                                                    <p class="card-text">...</p>
+                                                </div>
+                                                <div class="price-and-detail d-flex align-items-start justify-content-start">
+                                                    <p class="price mr-5">50.00 TL</p>
+                                                    <button class="btn btn-sm detail" data-bs-toggle="modal" data-bs-target="#exampleModal">İNCELE</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="galery-item">
+                                        <div class="card ">
+                                            <div class="card-body d-flex justify-content-between">
+                                                <div>
+                                                    <h5 class="card-title">Penne Alla Normo</h5>
+                                                    <p class="card-text">...</p>
+                                                </div>
+                                                <div class="price-and-detail d-flex align-items-start justify-content-start">
+                                                    <p class="price mr-5">50.00 TL</p>
+                                                    <button class="btn btn-sm detail" data-bs-toggle="modal" data-bs-target="#exampleModal">İNCELE</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="galery-item">
+                                        <div class="card ">
+                                            <div class="card-body d-flex justify-content-between">
+                                                <div>
+                                                    <h5 class="card-title">Humuslu Köfte</h5>
+                                                    <p class="card-text">...</p>
+                                                </div>
+                                                <div class="price-and-detail d-flex align-items-start justify-content-start">
+                                                    <p class="price mr-5">50.00 TL</p>
+                                                    <button class="btn btn-sm detail" data-bs-toggle="modal" data-bs-target="#exampleModal">İNCELE</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="exampleModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <i class="fa-solid fa-xmark close-modal" data-bs-dismiss="modal" aria-label="Close"></i>
+                    <div class="img-area">
+                        <img class="card-img-top" src="./img/iced-latte-coffee-morning-breakfast-concept.jpg" alt="Card image cap">
+                    </div>
+                    <div class="name-price-area d-flex justify-content-between align-items-start">
+                        <h4>
+                            Atom
+                        </h4>
+                        <span class="price">60.00 TL</span>
+                    </div>
+                    <div class="description">
+                        <p>
+                            (Dil peyniri, bal, yumurta, çilek, kayısı, muz, ceviz, kuru üzüm, taze nane
+                            mısır gevreği, yoğurt) (Alerjen: Gluten, süt ve ürünleri)
+                        </p>
+                    </div>
+
+                </div>
+                <!--        <div class="modal-footer">
+                    <button type="button" class="btn w-100" data-bs-dismiss="modal">KAPAT</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="top-footer w-100">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="content">
+                            <a class="menu" href="index.html">Menu</a>
+
+                            <ul class="address">
+                                <li>Şenlikköy, Yeşilköy Halkalı Cad. No: 93/1
+                                    No:16 Kat:4 <br> 34153 Bakırköy / İstanbul
+                                </li>
+                                <!-- <li><a href="">info@seasha.com</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom w-100">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <a href="https://www.wucize.com/">
+                            <img src="./img/wucize-logo.svg" alt="wucize logo">
+                        </a>
+                    </div>
+
+                    <div class="col-md-12">
+                        <p class="copyright-text">Copyright Wucize Yazılım Teknolojileri &copy; 1.0.0 </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

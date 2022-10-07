@@ -309,12 +309,12 @@ header .navbar .dropdown .dropdown-menu .dropdown-item:hover, header .navbar .dr
 
 @media screen and (max-width: 600px) {
   .category-menu .category-list .item .detail h5 {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 
 .category-menu .category-list .item .detail .price {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 300;
   color: var(--color-black);
 }

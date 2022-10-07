@@ -274,11 +274,11 @@ header {
                     color: var(--color-red);
                     font-weight: 500;
                     @media screen and (max-width:$sm-breakpoint) {
-                        font-size: 1rem;
+                        font-size: 0.9rem;
                     }
                 }
                 .price{
-                    font-size: 0.9rem;
+                    font-size: 0.8rem;
                     font-weight: 300;
                     color: var(--color-black);
                 }

@@ -260,6 +260,16 @@ header .navbar .dropdown .dropdown-menu .dropdown-item:hover, header .navbar .dr
   }
 }
 
+.category-menu .menu-list-area ul {
+  width: 100%;
+  overflow-y: scroll;
+  padding-left: 1rem;
+}
+
+.category-menu .menu-list-area ul li {
+  padding: 1rem 3rem 1rem 1rem;
+}
+
 .category-menu .category-list {
   padding: 1rem 1rem 0rem 1rem;
 }

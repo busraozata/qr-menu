@@ -8,6 +8,30 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-black);
+}
 body {
     font-family: "Poppins", sans-serif;
     font-size: 1.125rem;
@@ -61,7 +85,7 @@ $xxl-breakpoint: 1400px; //Extra extra large
 
 :root {
     --color-black: #000;
-    --color-gray: #848585;
+    --color-gray: #b7babb;
     --color-white: #fff;
     --cream-color: #fff8f1;
     --color-red: #a30219;
@@ -118,6 +142,10 @@ $xxl-breakpoint: 1400px; //Extra extra large
 }
 
 header {
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    background-color: var(--color-white);
     .container-fluid {
         padding: 0;
     }
@@ -179,6 +207,46 @@ header {
             }
         }
     }
+    .menu-list-area {
+        @include shadow;
+        width: 100%;
+            overflow-y: scroll;
+      
+            padding: 1rem 1rem 1rem 0.5rem;
+        .col-7 {
+            @media screen and(max-width:$sm-breakpoint) {
+                width: 54.33333333%;
+            }
+            @media screen and(max-width:375px) {
+                width: 58.33333333%;
+            }
+            @media screen and(max-width:372px) {
+                width: 69.33333333%;
+            }
+        }
+        .row {
+            
+            flex-wrap: inherit;
+            a {
+                font-size: 0.9rem;
+                color: var(--color-black);
+                font-weight: 500;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                &.active {
+                    &::before {
+                        content: "";
+                        background-color: var(--color-black);
+                        height: 0.1rem;
+                        width: 100%;
+                        position: absolute;
+                        bottom: -0.5rem;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .boxes {
@@ -204,13 +272,13 @@ header {
             height: 5rem;
             padding: 1rem;
             @media screen and(max-width:375PX) {
-              height: 4rem;
+                height: 4rem;
             }
             h5 {
                 padding: 1rem 0rem;
                 font-weight: 500;
                 font-size: 1.2rem;
-                color: var(--color-red);
+                color: var(--color-black);
                 @media screen and(max-width:$sm-breakpoint) {
                     font-size: 1rem;
                     padding: 0rem;
@@ -223,21 +291,21 @@ header {
     }
 }
 
-.category-menu{
-    .category-title-area{
-        background-color: var(--cream-color);
+.category-menu {
+    .category-title-area {
+        background-color: var(--color-gray);
         padding: 1.5rem 1rem;
-        
+
         @include shadow;
         margin: 0rem 0rem 2rem 0rem;
 
         h2 {
             font-weight: 500;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             margin-bottom: 0rem;
 
             @media screen and(max-width:$sm-breakpoint) {
-                font-size: 1.1rem;
+                font-size: 1rem;
             }
 
             @media screen and(max-width:375px) {
@@ -245,28 +313,19 @@ header {
             }
         }
     }
-    .menu-list-area{
-        ul{
-            width: 100%;
-            overflow-y: scroll;
-            padding-left: 1rem;
-            li{
-                padding: 1rem 3rem 1rem 1rem;
-            }
-        }
-    }
-    .category-list{
+
+    .category-list {
         padding: 1rem 1rem 0rem 1rem;
-        .item{
+        .item {
             border: 1px solid #8485855b;
-            
+
             @include shadow;
             overflow: hidden;
             flex-direction: column;
-           
-            .img-wrapper{
+
+            .img-wrapper {
                 width: 100%;
-                img{
+                img {
                     width: 100%;
                     height: 30rem;
                     object-fit: cover;
@@ -278,16 +337,16 @@ header {
                     }
                 }
             }
-            .detail{
+            .detail {
                 padding: 1rem;
-                h5{
-                    color: var(--color-red);
+                h5 {
+                    color: var(--color-black);
                     font-weight: 500;
-                    @media screen and (max-width:$sm-breakpoint) {
+                    @media screen and (max-width: $sm-breakpoint) {
                         font-size: 0.9rem;
                     }
                 }
-                .price{
+                .price {
                     font-size: 0.8rem;
                     font-weight: 300;
                     color: var(--color-black);
@@ -330,7 +389,6 @@ header {
                     width: 100%;
                     height: 15rem;
                     object-fit: cover;
-                   
                 }
             }
         }
@@ -714,7 +772,7 @@ header {
 }
 
 footer {
-    background-color: var(--cream-color);
+    background-color: var(--color-gray);
     @include shadow;
     padding: 1rem;
 
@@ -722,7 +780,7 @@ footer {
         padding: 2rem 0rem 4rem 0rem;
 
         .menu {
-            color: var(--color-gray);
+            color: var(--color-black);
             font-weight: 400;
             display: block;
             margin-bottom: 3rem;

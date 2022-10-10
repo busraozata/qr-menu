@@ -8,6 +8,31 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-black);
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-size: 1.125rem;
@@ -56,7 +81,7 @@ a {
 
 :root {
   --color-black: #000;
-  --color-gray: #848585;
+  --color-gray: #b7babb;
   --color-white: #fff;
   --cream-color: #fff8f1;
   --color-red: #a30219;
@@ -112,6 +137,14 @@ a {
 #back-to-top.show {
   opacity: 1;
   visibility: visible;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  background-color: var(--color-white);
 }
 
 header .container-fluid {
@@ -174,6 +207,60 @@ header .navbar .dropdown .dropdown-menu .dropdown-item:hover, header .navbar .dr
   color: var(--color-black);
 }
 
+header .menu-list-area {
+  -webkit-box-shadow: 0px 9px 9px -10px rgba(0, 0, 0, 0.55);
+  box-shadow: 0px 9px 9px -10px rgba(0, 0, 0, 0.55);
+  width: 100%;
+  overflow-y: scroll;
+  padding: 1rem 1rem 1rem 0.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  header .menu-list-area .col-7 {
+    width: 54.33333333%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  header .menu-list-area .col-7 {
+    width: 58.33333333%;
+  }
+}
+
+@media screen and (max-width: 372px) {
+  header .menu-list-area .col-7 {
+    width: 69.33333333%;
+  }
+}
+
+header .menu-list-area .row {
+  -ms-flex-wrap: inherit;
+      flex-wrap: inherit;
+}
+
+header .menu-list-area .row a {
+  font-size: 0.9rem;
+  color: var(--color-black);
+  font-weight: 500;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header .menu-list-area .row a.active::before {
+  content: "";
+  background-color: var(--color-black);
+  height: 0.1rem;
+  width: 100%;
+  position: absolute;
+  bottom: -0.5rem;
+}
+
 .boxes {
   padding: 2rem 0rem;
 }
@@ -218,7 +305,7 @@ header .navbar .dropdown .dropdown-menu .dropdown-item:hover, header .navbar .dr
   padding: 1rem 0rem;
   font-weight: 500;
   font-size: 1.2rem;
-  color: var(--color-red);
+  color: var(--color-black);
 }
 
 @media screen and (max-width: 600px) {
@@ -235,7 +322,7 @@ header .navbar .dropdown .dropdown-menu .dropdown-item:hover, header .navbar .dr
 }
 
 .category-menu .category-title-area {
-  background-color: var(--cream-color);
+  background-color: var(--color-gray);
   padding: 1.5rem 1rem;
   -webkit-box-shadow: 0px 9px 9px -10px rgba(0, 0, 0, 0.55);
   box-shadow: 0px 9px 9px -10px rgba(0, 0, 0, 0.55);
@@ -244,13 +331,13 @@ header .navbar .dropdown .dropdown-menu .dropdown-item:hover, header .navbar .dr
 
 .category-menu .category-title-area h2 {
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-bottom: 0rem;
 }
 
 @media screen and (max-width: 600px) {
   .category-menu .category-title-area h2 {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
 
@@ -258,16 +345,6 @@ header .navbar .dropdown .dropdown-menu .dropdown-item:hover, header .navbar .dr
   .category-menu .category-title-area h2 {
     font-size: 1rem;
   }
-}
-
-.category-menu .menu-list-area ul {
-  width: 100%;
-  overflow-y: scroll;
-  padding-left: 1rem;
-}
-
-.category-menu .menu-list-area ul li {
-  padding: 1rem 3rem 1rem 1rem;
 }
 
 .category-menu .category-list {
@@ -313,7 +390,7 @@ header .navbar .dropdown .dropdown-menu .dropdown-item:hover, header .navbar .dr
 }
 
 .category-menu .category-list .item .detail h5 {
-  color: var(--color-red);
+  color: var(--color-black);
   font-weight: 500;
 }
 
@@ -745,7 +822,7 @@ header .navbar .dropdown .dropdown-menu .dropdown-item:hover, header .navbar .dr
 }
 
 footer {
-  background-color: var(--cream-color);
+  background-color: var(--color-gray);
   -webkit-box-shadow: 0px 9px 9px -10px rgba(0, 0, 0, 0.55);
   box-shadow: 0px 9px 9px -10px rgba(0, 0, 0, 0.55);
   padding: 1rem;
@@ -756,7 +833,7 @@ footer .top-footer {
 }
 
 footer .top-footer .menu {
-  color: var(--color-gray);
+  color: var(--color-black);
   font-weight: 400;
   display: block;
   margin-bottom: 3rem;

@@ -207,12 +207,32 @@ header {
             }
         }
     }
+    .navbar-form {
+        .input-group {
+            .form-control {
+                border-color: var(--color-gray);
+                &:focus {
+                    box-shadow: none;
+                    outline: none;
+                  
+                }
+            }
+            .input-group-btn {
+                position: absolute;
+                right: 0;
+                z-index: 9999;
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+        }
+    }
     .menu-list-area {
         @include shadow;
         width: 100%;
-            overflow-y: scroll;
-      
-            padding: 1rem 1rem 1rem 0.5rem;
+        overflow-y: auto;
+
+        padding: 1rem 1rem 1rem 0.5rem;
         .col-7 {
             @media screen and(max-width:$sm-breakpoint) {
                 width: 54.33333333%;
@@ -225,7 +245,6 @@ header {
             }
         }
         .row {
-            
             flex-wrap: inherit;
             a {
                 font-size: 0.9rem;

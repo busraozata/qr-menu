@@ -211,10 +211,12 @@ header {
         .input-group {
             .form-control {
                 border-color: var(--color-gray);
+                font-size: 0.9rem;
+                font-weight: 300;
+                border-radius: 0;
                 &:focus {
                     box-shadow: none;
                     outline: none;
-                  
                 }
             }
             .input-group-btn {
